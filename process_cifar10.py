@@ -35,7 +35,7 @@ def generate_pairwise_histogram_distances(hists, num_samples=1000000):
 
 if __name__ == '__main__':
     dataset_path = sys.argv[1]
-    data = util.load_cifar10(dataset_path)
+    data, labels = util.load_cifar10(dataset_path)
     hists = generate_all_histograms(data)
     distances = generate_pairwise_histogram_distances(hists)
 
