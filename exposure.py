@@ -3,6 +3,7 @@ import os
 import itertools
 import math
 import numpy as np
+import util
 
 import matplotlib
 matplotlib.use('Agg')
@@ -42,13 +43,13 @@ def get_image_histograms(dataset_path, suffix, num_channels, debug):
                                      None,
                                      [8,8,8],
                                      [0,256,0,256,0,256])
+
                 yield histr
 
                 if num_hists % 1000 == 0:
                     print "Created {} histograms".format(num_hists)
 
                 num_hists += 1 
-
 
 def get_histogram_distances(dataset_path, suffix, num_channels=3, debug=False):
 
@@ -80,5 +81,8 @@ if __name__ == "__main__":
     dataset_path = "/datasets/BigLearning/ahjiang/image-data/imagenet/"
     suffix = "JPEG"
 
-    avg_distance, var_distance  = get_histogram_distances(dataset_path, suffix, debug=True)
-    print dataset_path, avg_distance, var_distance
+    #avg_distance, var_distance  = get_histogram_distances(dataset_path, suffix, debug=True)
+    #print dataset_path, avg_distance, var_distance
+
+    dataset_path = "/datasets/BigLearning/ahjiang/image-data/cifar/cifar-10-batches-py" 
+    data = util.load_cifar10(dataset_path)
