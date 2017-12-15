@@ -43,6 +43,7 @@ def get_image_histograms(dataset_path, suffix, num_channels, debug):
                                      None,
                                      [8,8,8],
                                      [0,256,0,256,0,256])
+                histr = (histr / np.sum(histr)).flatten()
 
                 yield histr
 
