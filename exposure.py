@@ -14,10 +14,17 @@ from matplotlib import pyplot as plt
 #cv2.HISTCMP_INTERSECT 
 #cv2.HISTCMP_BHATTACHARYYA
 
-def get_histograms(dataset_path, suffix, num_channels, debug):
+def plot_histogram(histr, plot_dir):
+    if not os.path.exists(plot_dir):
+        os.makedirs(plot_dir)
+    plt.plot(histr, color = col)
+    plt.xlim([0,256])
+    plt.savefig(os.path.join(plot_dir, col+"-"+name))
+    plt.clf()
+
+def get_image_histograms(dataset_path, suffix, num_channels, debug):
     num_hists = 0
-    debug_num_hists = 10
-    plot_dir = "plots"
+    debug_num_hists = 100
 
     for root, dirs, files in os.walk(dataset_path):
         if num_hists > debug_num_hists and debug:
@@ -30,18 +37,12 @@ def get_histograms(dataset_path, suffix, num_channels, debug):
             if name.endswith(suffix):
                 image_file = os.path.join(root, name)
                 img = cv2.imread(image_file)
-
-                color = ('b','g','r')
-                for i,col in enumerate(color):
-                    histr = cv2.calcHist([img],[i], None, [256], [0,256])
-                    yield histr
-                    if debug:
-                        if not os.path.exists(plot_dir):
-                            os.makedirs(plot_dir)
-                        plt.plot(histr, color = col)
-                        plt.xlim([0,256])
-                        plt.savefig(os.path.join(plot_dir, col+"-"+name))
-                        plt.clf()
+                histr = cv2.calcHist([img],
+                                     range(num_channels),
+                                     None,
+                                     [8,8,8],
+                                     [0,256,0,256,0,256])
+                yield histr
 
                 if num_hists % 1000 == 0:
                     print "Created {} histograms".format(num_hists)
@@ -51,7 +52,7 @@ def get_histograms(dataset_path, suffix, num_channels, debug):
 
 def get_histogram_distances(dataset_path, suffix, num_channels=3, debug=False):
 
-    histograms = get_histograms(dataset_path, suffix, num_channels, debug)
+    histograms = get_image_histograms(dataset_path, suffix, num_channels, debug)
     combos = itertools.combinations(histograms, 2)
 
     n = 0.
@@ -79,5 +80,5 @@ if __name__ == "__main__":
     dataset_path = "/datasets/BigLearning/ahjiang/image-data/imagenet/"
     suffix = "JPEG"
 
-    avg_distance, var_distance  = get_histogram_distances(dataset_path, suffix, debug=False)
+    avg_distance, var_distance  = get_histogram_distances(dataset_path, suffix, debug=True)
     print dataset_path, avg_distance, var_distance
