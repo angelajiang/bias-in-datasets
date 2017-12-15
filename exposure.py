@@ -14,11 +14,10 @@ from matplotlib import pyplot as plt
 #cv2.HISTCMP_INTERSECT 
 #cv2.HISTCMP_BHATTACHARYYA
 
-def get_histograms(dataset_path, suffix, num_channels=3, debug=False):
+def get_histograms(dataset_path, suffix, num_channels, debug):
     num_hists = 0
     debug_num_hists = 10
     plot_dir = "plots"
-    index = {}
 
     for root, dirs, files in os.walk(dataset_path):
         if num_hists > debug_num_hists and debug:
@@ -35,7 +34,7 @@ def get_histograms(dataset_path, suffix, num_channels=3, debug=False):
                 color = ('b','g','r')
                 for i,col in enumerate(color):
                     histr = cv2.calcHist([img],[i], None, [256], [0,256])
-                    index[name] = histr
+                    yield histr
                     if debug:
                         if not os.path.exists(plot_dir):
                             os.makedirs(plot_dir)
@@ -44,9 +43,16 @@ def get_histograms(dataset_path, suffix, num_channels=3, debug=False):
                         plt.savefig(os.path.join(plot_dir, col+"-"+name))
                         plt.clf()
 
+                if num_hists % 1000 == 0:
+                    print "Created {} histograms".format(num_hists)
+
                 num_hists += 1 
 
-    combos = itertools.combinations(index.values(), 2)
+
+def get_histogram_distances(dataset_path, suffix, num_channels=3, debug=False):
+
+    histograms = get_histograms(dataset_path, suffix, num_channels, debug)
+    combos = itertools.combinations(histograms, 2)
 
     n = 0.
     sum_x = 0.
@@ -73,5 +79,5 @@ if __name__ == "__main__":
     dataset_path = "/datasets/BigLearning/ahjiang/image-data/imagenet/"
     suffix = "JPEG"
 
-    avg_distance, var_distance  = get_histograms(dataset_path, suffix, debug=True)
+    avg_distance, var_distance  = get_histogram_distances(dataset_path, suffix, debug=False)
     print dataset_path, avg_distance, var_distance
