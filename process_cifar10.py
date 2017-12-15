@@ -1,29 +1,10 @@
-from exposure import get_histograms
 import cv2
-import glob
 import itertools
 import matplotlib.pyplot as plt
 import numpy as np
 import skimage.io as skio
 import sys
-
-def unpickle(file):
-    import cPickle
-    with open(file, 'rb') as fo:
-        data_dict = cPickle.load(fo)
-    return data_dict
-
-def load_cifar10(path):
-    data = []
-    for path in sorted(glob.glob(dataset_path + '/*_batch*')):
-        cifar10_data_batch = unpickle(path)
-        data.append(cifar10_data_batch['data'])
-    data = np.vstack(data)
-    data_r = data[:, :1024].reshape(data.shape[0], 32, 32)
-    data_g = data[:, 1024:2048].reshape(data.shape[0], 32, 32)
-    data_b = data[:, 2048:].reshape(data.shape[0], 32, 32)
-    data = np.stack([data_r, data_g, data_b], axis=-1)
-    return data
+import util
 
 def split_data_by_channel(data):
     assert len(data.shape) == 4 # b, h, w, c
@@ -54,7 +35,7 @@ def generate_pairwise_histogram_distances(hists, num_samples=1000000):
 
 if __name__ == '__main__':
     dataset_path = sys.argv[1]
-    data = load_cifar10(dataset_path)
+    data = util.load_cifar10(dataset_path)
     hists = generate_all_histograms(data)
     distances = generate_pairwise_histogram_distances(hists)
 
