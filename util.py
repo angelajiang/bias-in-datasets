@@ -8,7 +8,7 @@ def unpickle(file):
         data_dict = cPickle.load(fo)
     return data_dict
 
-def load_cifar10(path):
+def load_cifar10(dataset_path):
     data = []
     for path in sorted(glob.glob(dataset_path + '/*_batch*')):
         cifar10_data_batch = unpickle(path)
