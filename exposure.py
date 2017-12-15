@@ -71,7 +71,7 @@ def get_image_histograms(dataset_path, suffix, num_channels, total_num_hists):
 
                 num_hists += 1 
 
-def get_dataset_histogram(dataset_path, suffix, text_name, num_channels = 3, num_classes = 20, num_hists_per_class  = 100):
+def get_dataset_histogram(dataset_path, suffix, text_name, num_channels = 3, num_classes = 100, num_hists_per_class  = 1000):
     all_class_directories = [os.path.join(dataset_path, name) for name in os.listdir(dataset_path)]
     random.shuffle(all_class_directories)
     class_directories = all_class_directories[:num_classes]
