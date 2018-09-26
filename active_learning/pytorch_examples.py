@@ -111,13 +111,19 @@ def plot(xs_by_config, ys_by_config, xlabel, ylabel, plot_dir, smoothing=0):
                                                         config.decay)
         print xlabel, ",", ylabel, len(xs), len(ys)
         if config.top_k == config.pool_size:
-            plt.plot(xs, ys, label=label, linestyle="--", linewidth=0.5)
+            plt.plot(xs, ys, label=label, linestyle="--", linewidth=1)
         else:
-            plt.plot(xs, ys, label=label, linewidth=0.5)
+            plt.plot(xs, ys, label=label, linewidth=1)
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
 
     plot_file = "{}_{}_{}_top{}_ps{}_lr{}.pdf".format(config.dataset,
+                                                      ylabel,
+                                                      config.network,
+                                                      config.top_k,
+                                                      config.pool_size,
+                                                      config.lr)
+    plot_file = "{}_{}_{}_top{}_ps{}_lr{}.png".format(config.dataset,
                                                       ylabel,
                                                       config.network,
                                                       config.top_k,
@@ -253,7 +259,7 @@ def main():
     plot_dir = "{}/{}".format(plot_home_dir, experiment_name)
     if not os.path.exists(plot_dir):
         os.makedirs(plot_dir)
-    #plot_experiment(experiment_dir, plot_dir)
+    plot_experiment(experiment_dir, plot_dir)
 
     # MobileNet with 250000 backprops
     experiment_name = "180917_cifar10"
@@ -261,7 +267,7 @@ def main():
     plot_dir = "{}/{}".format(plot_home_dir, experiment_name)
     if not os.path.exists(plot_dir):
         os.makedirs(plot_dir)
-    plot_experiment(experiment_dir, plot_dir, 250)
+    #plot_experiment(experiment_dir, plot_dir, 250)
 
 if __name__ == "__main__":
     main()
