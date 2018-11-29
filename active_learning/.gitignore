@@ -1,3 +1,5 @@
 ipython/.ipynb_checkpoints/
 .DS_Store
+*.pyc
+**/*.pyc
 */.DS_Store
