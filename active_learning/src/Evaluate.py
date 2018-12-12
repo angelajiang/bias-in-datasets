@@ -31,7 +31,9 @@ def get_X_more_backwards(data1, data2):
                              ymarker)
             for ymarker in target_accuracies]
 
-    percent_diffs = [x2 / float(x1) for x1, x2 in zip(xs1, xs2) if x1 is not None and x2 is not None]
+    nums = [x2 for x1, x2 in zip(xs1, xs2) if x1 > 0 and x2 > 0]
+    denoms = [x1 for x1, x2 in zip(xs1, xs2) if x1 > 0 and x2 > 0]
+    percent_diffs = [n / float(d) for n, d in zip(nums, denoms)]
     return np.average(percent_diffs)
 
 
@@ -46,19 +48,37 @@ def get_X_more_forwards(data1, data2):
                               ymarker)
             for ymarker in target_accuracies]
 
-    percent_diffs = [x2 / float(x1) for x1, x2 in zip(xs1, xs2) if x1 is not None and x2 is not None]
+    nums = [x2 for x1, x2 in zip(xs1, xs2) if x1 > 0 and x2 > 0]
+    denoms = [x1 for x1, x2 in zip(xs1, xs2) if x1 > 0 and x2 > 0]
+    percent_diffs = [n / float(d) for n, d in zip(nums, denoms)]
     return np.average(percent_diffs)
 
-def evaluate(experiments_dir, baseline_name, baseline_file, experiment_names, experiment_files):
-    assert len(experiment_names) == len(experiment_files)
-    
+def evaluate_multiverse(experiments_dir, baseline_name, baseline_file, experiment_name):
+
     baseline_data = ParsedData(os.path.join(experiments_dir, baseline_name, baseline_file),
                                baseline_name,
                                baseline_file)
-    
+    baseline_accuracy = baseline_data.final_accuracy
+    exp_dir = os.path.join(experiments_dir, experiment_name)
+
+    for experiment_filename in os.listdir(exp_dir):
+        filepath = os.path.join(exp_dir, experiment_filename)
+        if experiment_filename == baseline_file or os.path.isdir(filepath):
+            continue
+        exp_data = ParsedData(filepath, experiment_name, experiment_filename)
+        auc_diff = get_auc_diff(baseline_data, exp_data)
+        print("AUC Difference: {}".format(auc_diff))
+
+def evaluate(experiments_dir, baseline_name, baseline_file, experiment_names, experiment_files):
+    assert len(experiment_names) == len(experiment_files)
+
+    baseline_data = ParsedData(os.path.join(experiments_dir, baseline_name, baseline_file),
+                               baseline_name,
+                               baseline_file)
+
     baseline_accuracy = baseline_data.final_accuracy
     print("Baseline Final Accuracy: {}".format(baseline_accuracy))
-    
+
     for experiment_name, experiment_file in zip(experiment_names, experiment_files):
         exp_dir = os.path.join(experiments_dir, experiment_name)
         filepath = os.path.join(exp_dir, experiment_file)
@@ -67,7 +87,7 @@ def evaluate(experiments_dir, baseline_name, baseline_file, experiment_names, ex
         auc_diff = get_auc_diff(baseline_data, exp_data)
         avg_X_more_backwards = get_X_more_backwards(baseline_data, exp_data)
         avg_X_more_forwards = get_X_more_forwards(baseline_data, exp_data)
-        
+
         print("Final Accuracy: {}".format(final_accuracy))
         print("AUC Difference: {}".format(auc_diff))
         print("{0:.2f}X More Backprops".format(avg_X_more_backwards))
