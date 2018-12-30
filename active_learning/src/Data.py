@@ -65,7 +65,7 @@ class ParsedData:
                                               self.test_accuracies)
                         if x <= xmax] 
             filtered_xs = [d[0] for d in filtered]
-            filtered_ys = [d[0] for d in filtered]
+            filtered_ys = [d[1] for d in filtered]
             return metrics.auc(filtered_xs,
                                filtered_ys)
         else:

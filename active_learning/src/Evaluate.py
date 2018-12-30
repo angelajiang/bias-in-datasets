@@ -2,9 +2,9 @@
 import os
 import sys
 import numpy as np
-from data import ParsedData
+from Data import ParsedData
 
-        
+
 def find_first_x_at_y(xs, ys, ymarker):
     if ymarker is None:
         return None
@@ -16,8 +16,8 @@ def find_first_x_at_y(xs, ys, ymarker):
 def get_auc_diff(data1, data2):
     xmax = min(max(data1.test_num_backprops),
                max(data2.test_num_backprops))
-    auc1 = data1.auc(xmax)
-    auc2 = data2.auc(xmax)
+    auc1 = data1.auc(xmax=xmax)
+    auc2 = data2.auc(xmax=xmax)
     return auc2 - auc1
 
 def get_X_more_backwards(data1, data2):
@@ -69,20 +69,19 @@ def evaluate_multiverse(experiments_dir, baseline_name, baseline_file, experimen
         auc_diff = get_auc_diff(baseline_data, exp_data)
         print("AUC Difference: {}".format(auc_diff))
 
-def evaluate(experiments_dir, baseline_name, baseline_file, experiment_names, experiment_files):
-    assert len(experiment_names) == len(experiment_files)
-
+def evaluate(experiments_dir, baseline_name, baseline_file, experiment_name):
     baseline_data = ParsedData(os.path.join(experiments_dir, baseline_name, baseline_file),
                                baseline_name,
                                baseline_file)
-
     baseline_accuracy = baseline_data.final_accuracy
-    print("Baseline Final Accuracy: {}".format(baseline_accuracy))
+    exp_dir = os.path.join(experiments_dir, experiment_name)
+    print("Baseline Accuracy: {}".format(baseline_accuracy))
 
-    for experiment_name, experiment_file in zip(experiment_names, experiment_files):
-        exp_dir = os.path.join(experiments_dir, experiment_name)
-        filepath = os.path.join(exp_dir, experiment_file)
-        exp_data = ParsedData(filepath, experiment_name, experiment_file)
+    for experiment_filename in os.listdir(exp_dir):
+        filepath = os.path.join(exp_dir, experiment_filename)
+        if experiment_filename == baseline_file or experiment_filename == "sha" or os.path.isdir(filepath):
+            continue
+        exp_data = ParsedData(filepath, experiment_name, experiment_filename)
         final_accuracy = exp_data.final_accuracy
         auc_diff = get_auc_diff(baseline_data, exp_data)
         avg_X_more_backwards = get_X_more_backwards(baseline_data, exp_data)
