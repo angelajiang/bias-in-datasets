@@ -9,11 +9,8 @@ from sklearn import metrics
 import parser
 
 class ParsedData:
-    def __init__(self, filepath, experiment_name, filename):
+    def __init__(self, filepath, experiment_name=None, filename=None):
         self.filepath = filepath
-        self.experiment_name = experiment_name
-        self.filename = filename
-        self.config = parser.Config(filename, experiment_name)
         self.train_lines, self.test_lines = parser.parse_file(filepath)
 
     @property
@@ -61,7 +58,7 @@ class ParsedData:
 
     @property
     def final_accuracy(self):
-        return max(self.test_accuracies)
+        return self.test_accuracies[-1]
 
     def auc(self, xmax = None):
         if xmax:

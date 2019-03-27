@@ -107,3 +107,17 @@ def evaluate(experiments_dir, baseline_name, baseline_file, experiment_name, max
             print("SB increases error")
 
 
+def evaluate_file(filename, target_errors=None):
+    exp_data = ParsedData(filename)
+    final_error = 100 - exp_data.final_accuracy
+    print("Final error: {}".format(final_error))
+
+    if target_errors:
+        for target_error in target_errors:
+            num_backprops = find_first_x_at_y_err(exp_data.test_num_backprops,
+                                                  exp_data.test_errors,
+                                                  target_error)
+            num_forwards = find_first_x_at_y_err(exp_data.test_num_inferences,
+                                                 exp_data.test_errors,
+                                                 target_error)
+            print "{},{},{}".format(target_error, num_backprops, num_forwards)
