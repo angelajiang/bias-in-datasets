@@ -1,0 +1,19 @@
+/users/ahjiang/.local/lib/python2.7/site-packages/requests/__init__.py:83: RequestsDependencyWarning: Old version of cryptography ([1, 2, 3]) may cause slowdown.
+  warnings.warn(warning, RequestsDependencyWarning)
+usage: main.py [-h] [--lr LR] [--lr-sched LR_SCHED] [--momentum MOMENTUM]
+               [--decay DECAY] [--resume-checkpoint-file N] [--augment]
+               [--kath] [--batch-size N] [--test-batch-size N]
+               [--log-interval N] [--net N] [--dataset N] [--datadir N]
+               [--write-images WRITE_IMAGES] [--seed SEED] [--optimizer N]
+               [--loss-fn N] [--sb-start-epoch SB_START_EPOCH]
+               [--pickle-dir PICKLE_DIR] [--pickle-prefix PICKLE_PREFIX]
+               [--max-num-backprops N] [--sampling-strategy N]
+               [--sampling-min SAMPLING_MIN] [--sampling-max SAMPLING_MAX]
+               [--selectivity-scalar SELECTIVITY_SCALAR] [--sb-strategy N]
+               [--prob-strategy N] [--prob-pow N] [--no-logging NO_LOGGING]
+               [--imageids-log-interval IMAGEIDS_LOG_INTERVAL]
+               [--losses-log-interval LOSSES_LOG_INTERVAL]
+               [--confidences-log-interval CONFIDENCES_LOG_INTERVAL]
+               [--checkpoint-interval N] [--randomize-labels RANDOMIZE_LABELS]
+               [--sample-size N]
+main.py: error: argument --sb-start-epoch: invalid int value: ''

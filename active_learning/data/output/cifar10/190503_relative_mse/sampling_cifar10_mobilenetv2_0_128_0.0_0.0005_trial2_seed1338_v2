@@ -1,0 +1,93 @@
+/users/ahjiang/.local/lib/python2.7/site-packages/requests/__init__.py:83: RequestsDependencyWarning: Old version of cryptography ([1, 2, 3]) may cause slowdown.
+  warnings.warn(warning, RequestsDependencyWarning)
+Setting static random seeds to 1338
+==> Building model..
+Performing data augmentation on CIFAR10
+config sb-start-epoch 1
+config lr 0.1
+config lr-sched data/config/lr_sched_fast
+config momentum 0.9
+config decay 0.0005
+config batch-size 128
+config net mobilenetv2
+config dataset cifar10
+config seed 1338
+config optimizer sgd
+config loss-fn cross
+config sb-strategy sampling
+config prob-strategy relative
+config prob-loss-fn mse
+config max-num-backprops 5500000
+config sampling-strategy square
+config sampling-min 0.0
+config sampling-max 1
+config prob_pow 1
+main.py:210: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  softmax_outputs = nn.Softmax()(outputs)
+/proj/BigLearning/ahjiang/output/cifar10/190503_relative_mse/pickles/target_confidences/sampling_cifar10_mobilenetv2_0_128_0.0_0.0005_trial2_seed1338_target_confidences.pickle
+test_debug,0,0,0,0.023027,10.000000,1556908409.33
+/users/ahjiang/.local/lib/python2.7/site-packages/torch/nn/functional.py:52: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+/users/ahjiang/src/pytorch-cifar/lib/trainer.py:131: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  softmax_outputs = nn.Softmax()(outputs)
+average_momentum 0.40377369523
+total_norm 12.682779079
+Setting learning rate to 0.1 at 128 backprops
+train_debug,0,128,0,2.302119,2.314707,1556908413.28,7.812500
+average_momentum 0.468396246433
+total_norm 7.6580707102
+train_debug,0,256,0,2.303177,2.324784,1556908413.82,7.812500
+average_momentum 0.485228806734
+total_norm 5.45344672058
+train_debug,0,384,0,2.303120,2.316091,1556908414.35,8.593750
+average_momentum 0.486743241549
+total_norm 4.65768855198
+train_debug,0,512,0,2.303166,2.317833,1556908414.88,8.593750
+average_momentum 0.483146578074
+total_norm 4.22997465474
+train_debug,0,640,0,2.302928,2.314560,1556908415.41,9.531250
+average_momentum 0.48281109333
+total_norm 4.37570755803
+train_debug,0,768,0,2.303240,2.321619,1556908415.95,9.244792
+average_momentum 0.474923223257
+total_norm 3.89310299242
+train_debug,0,896,0,2.303464,2.315256,1556908416.48,9.151786
+average_momentum 0.459781825542
+total_norm 3.5535415171
+train_debug,0,1024,0,2.304277,2.307379,1556908417.01,9.472656
+average_momentum 0.443716406822
+total_norm 3.66119238308
+train_debug,0,1152,0,2.304115,2.305899,1556908417.55,9.722222
+average_momentum 0.430826157331
+total_norm 3.37900764375
+train_debug,0,1280,0,2.303864,2.302406,1556908418.08,9.765625
+average_momentum 0.420832663774
+total_norm 3.45412093816
+train_debug,0,1408,0,2.304254,2.290951,1556908418.62,9.517045
+average_momentum 0.395659297705
+total_norm 2.60012988797
+train_debug,0,1536,0,2.304274,2.274590,1556908419.15,9.570312
+average_momentum 0.38416403532
+total_norm 3.24782573131
+train_debug,0,1664,0,2.303227,2.265325,1556908419.68,9.915865
+average_momentum 0.366363883018
+total_norm 3.33424415007
+train_debug,0,1792,0,2.305085,2.277874,1556908420.22,9.654018
+average_momentum 0.375489145517
+total_norm 3.91548938702
+train_debug,0,1920,0,2.305633,2.278325,1556908420.76,9.583333
+average_momentum 0.34487247467
+total_norm 2.88810556642
+train_debug,0,2048,0,2.304563,2.273103,1556908421.3,9.472656
+average_momentum 0.346078872681
+total_norm 3.77994764108
+train_debug,0,2176,0,2.307281,2.281057,1556908421.83,9.420956
+average_momentum 0.327157109976
+total_norm 1.89655745623
+train_debug,0,2304,0,2.306747,2.266508,1556908422.37,9.678819
+average_momentum 0.302312523127
+total_norm 2.87884043984
+train_debug,0,2432,0,2.310711,2.271521,1556908422.91,9.416118
+average_momentum 0.279455274343
+total_norm 1.94274328458
+train_debug,0,2560,0,2.312186,2.263445,1556908423.45,9.257812

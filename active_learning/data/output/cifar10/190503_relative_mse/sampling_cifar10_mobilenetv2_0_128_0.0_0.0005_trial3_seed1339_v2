@@ -1,0 +1,30 @@
+/users/ahjiang/.local/lib/python2.7/site-packages/requests/__init__.py:83: RequestsDependencyWarning: Old version of cryptography ([1, 2, 3]) may cause slowdown.
+  warnings.warn(warning, RequestsDependencyWarning)
+Setting static random seeds to 1339
+==> Building model..
+Performing data augmentation on CIFAR10
+config sb-start-epoch 1
+config lr 0.1
+config lr-sched data/config/lr_sched_fast
+config momentum 0.9
+config decay 0.0005
+config batch-size 128
+config net mobilenetv2
+config dataset cifar10
+config seed 1339
+config optimizer sgd
+config loss-fn cross
+config sb-strategy sampling
+config prob-strategy relative
+config prob-loss-fn mse
+config max-num-backprops 5500000
+config sampling-strategy square
+config sampling-min 0.0
+config sampling-max 1
+config prob_pow 1
+Traceback (most recent call last):
+  File "main.py", line 584, in <module>
+    main(args)
+  File "main.py", line 420, in main
+    prob_loss_fn,
+UnboundLocalError: local variable 'prob_loss_fn' referenced before assignment

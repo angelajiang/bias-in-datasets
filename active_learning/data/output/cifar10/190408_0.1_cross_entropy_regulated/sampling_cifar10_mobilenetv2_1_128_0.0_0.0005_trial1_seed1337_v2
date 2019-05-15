@@ -1,0 +1,24 @@
+/users/ahjiang/.local/lib/python2.7/site-packages/requests/__init__.py:83: RequestsDependencyWarning: Old version of cryptography ([1, 2, 3]) may cause slowdown.
+  warnings.warn(warning, RequestsDependencyWarning)
+Setting static random seeds to 1337
+==> Building model..
+Performing data augmentation on CIFAR10
+config sb-start-epoch 0
+config lr 0.1
+config lr-sched data/config/lr_sched_orig
+config momentum 0.9
+config decay 0.0005
+config batch-size 128
+config net mobilenetv2
+config dataset cifar10
+config seed 1337
+config optimizer sgd
+config loss-fn cross_entropy_regulated
+config sb-strategy sampling
+config prob-strategy vanilla
+config max-num-backprops 17500000
+config sampling-strategy square
+config sampling-min 1.0
+config sampling-max 1
+config prob_pow 1
+Error: Loss function cannot be cross_entropy_regulated

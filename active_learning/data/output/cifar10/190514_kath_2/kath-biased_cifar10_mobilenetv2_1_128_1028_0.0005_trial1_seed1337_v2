@@ -1,0 +1,61 @@
+Setting static random seeds to 1337
+==> Building model..
+Performing data augmentation on CIFAR10
+config sb-start-epoch 1
+config lr 0.1
+config lr-sched /users/ahjiang/src/pytorch-cifar/data/config/neurips/lrsched_cifar10_gradual_fast
+config momentum 0.9
+config decay 0.0005
+config batch-size 128
+config net mobilenetv2
+config dataset cifar10
+config seed 1337
+config optimizer sgd
+config loss-fn cross
+config sb-strategy sampling
+config prob-strategy relative-cubed
+config prob-loss-fn cross
+config max-num-backprops 5838000
+config sampling-strategy square
+config sampling-min 1.0
+config sampling-max 1
+config prob_pow 1
+config max_history_len 1024
+config forwardlr False
+config kath True
+config kath_strategy biased
+/proj/BigLearning/ahjiang/output/cifar10/190514_kath_2/pickles/target_confidences/kath-biased_cifar10_mobilenetv2_1_128_1028_0.0005_trial1_seed1337_target_confidences.pickle
+test_debug,0,0,0,0.023027,10.000000,1557892955.63
+average_momentum 0.437321513891
+total_norm 13.2116123818
+train_debug,0,128,0,20.720053,2.310408,1557892960.33,10.937500
+average_momentum 0.506396651268
+total_norm 8.06493661874
+train_debug,0,256,0,20.717161,2.298659,1557892961.62,13.281250
+average_momentum 0.530877411366
+total_norm 6.51552692054
+train_debug,0,384,0,20.722023,2.309285,1557892962.91,11.718750
+average_momentum 0.526910185814
+total_norm 4.59487098355
+train_debug,0,512,0,20.723747,2.327253,1557892964.2,11.132812
+average_momentum 0.517792284489
+total_norm 4.41151370578
+train_debug,0,640,0,20.724867,2.309154,1557892965.49,11.875000
+average_momentum 0.507547557354
+total_norm 4.14783087009
+train_debug,0,768,0,20.724754,2.327921,1557892966.78,11.588542
+average_momentum 0.488315850496
+total_norm 3.50101191689
+train_debug,0,896,0,20.724491,2.312735,1557892968.08,11.049107
+average_momentum 0.476413160563
+total_norm 3.69163587385
+train_debug,0,1024,0,20.726057,2.322580,1557892969.37,11.523438
+average_momentum 0.448459714651
+total_norm 2.79152696139
+train_debug,0,1152,0,20.726849,2.303548,1557892970.66,11.197917
+average_momentum 0.425735771656
+total_norm 2.94096984234
+train_debug,0,1280,0,20.728662,2.302300,1557892971.95,11.015625
+average_momentum 0.417115211487
+total_norm 3.046388663
+train_debug,0,1408,0,20.736116,2.290676,1557892973.24,10.511364
