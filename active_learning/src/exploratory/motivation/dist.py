@@ -56,6 +56,7 @@ def colorfield(filenames, labels, epoch):
             plt.show()
 
 def selectivity_v_dist(filenames, labels, epoch, plot_dir):
+    print("Plotting selectivity_v_dist for epoch {}".format(epoch))
     d_fraction_same = {}
     d_selectivities = {}
 
@@ -72,7 +73,7 @@ def selectivity_v_dist(filenames, labels, epoch, plot_dir):
             d_fraction_same[label] = average_fraction_same
             d_selectivities[label] = selectivities
             plt.scatter(selectivities, average_dists, label=label)
-    plt.xlabel("Selectivity")
+    plt.xlabel("Fraction Selected for Training")
     plt.ylabel("Cosine Similarity")
     plt.ylim(0, 1)
     plt.legend()
@@ -83,43 +84,13 @@ def selectivity_v_dist(filenames, labels, epoch, plot_dir):
     for label, fraction_same in d_fraction_same.iteritems(): 
         selectivities = d_selectivities[label]
         plt.scatter(selectivities, fraction_same, label=label)
-    plt.xlabel("Selectivity")
-    plt.ylabel("Fraction w/ Same Sign")
+    plt.xlabel("Fraction Selected for Training")
+    plt.ylabel("Fraction of Gradient Weights w/ Same Sign")
     plt.ylim(0, 1)
     plt.legend()
     plotfile = os.path.join(plot_dir, "selectivity_v_fraction_same_epoch{}.png".format(epoch))
     plt.savefig(plotfile)
     plt.clf()
-
-def dist_hist(filenames, labels, epoch, plot_dir):
-
-    d_fraction_same = {}
-    for filename, label in zip(filenames, labels):
-        with open(filename, "rb") as f:
-            d = pickle.load(f)
-            cosine_sims = d["cos_sims"]
-            fraction_same = d["fraction_same"]
-            average_dists = [np.mean(cs) for cs in cosine_sims]
-            average_fraction_same = [np.mean(fs) for fs in fraction_same]
-            d_fraction_same[label] = average_fraction_same
-        plt.hist(average_dists, bins=50, label=label, alpha=0.4)
-    plt.xlabel("Cosine Similarity")
-    plt.ylabel("Histogram")
-    plt.legend()
-    plotfile = os.path.join(plot_dir, "cosine_sims_hist_epoch{}.png".format(epoch))
-    plt.savefig(plotfile)
-    plt.clf()
-
-    for label, fraction_same in d_fraction_same.iteritems(): 
-        plt.hist(fraction_same, bins=50, label=label, alpha=0.4)
-
-    plt.xlabel("Fraction w/ same sign")
-    plt.ylabel("Histogram")
-    plt.legend()
-    plotfile = os.path.join(plot_dir, "fraction_same_hist_epoch{}.png".format(epoch))
-    plt.savefig(plotfile)
-    plt.clf()
-
 
 if __name__ == "__main__":
     home = "/Users/angela/src/private/bias-in-datasets/active_learning/data/output/cifar10/"
@@ -141,16 +112,16 @@ if __name__ == "__main__":
             ]
 
     #epochs = [1, 2, 3, 4, 5, 6]
-    epochs = [1, 5, 10]
+    epochs = range(30, 101, 5)
     for epoch in epochs:
         filenames = []
         labels = []
         for f, label in exps:
             filename = os.path.join(home, subdir, f+".epoch_{}.pickle".format(epoch))
-            filenames.append(filename)
-            labels.append(label)
+            if os.path.isfile(filename):
+                filenames.append(filename)
+                labels.append(label)
         #colorfield(filenames, labels, epoch)
-        dist_hist(filenames, labels, epoch, plot_dir)
         selectivity_v_dist(filenames, labels, epoch, plot_dir)
 
     colors = [BASELINE_COLOR, SB_COLOR, COLOR1, COLOR2]
