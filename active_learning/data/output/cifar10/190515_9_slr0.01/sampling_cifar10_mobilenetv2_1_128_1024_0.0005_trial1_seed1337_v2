@@ -1,0 +1,26 @@
+Setting static random seeds to 1337
+==> Building model..
+Performing data augmentation on CIFAR10
+config sb-start-epoch 1
+config lr 0.01
+config lr-sched None
+config momentum 0.9
+config decay 0.0005
+config batch-size 128
+config net mobilenetv2
+config dataset cifar10
+config seed 1337
+config optimizer sgd
+config loss-fn cross
+config sb-strategy sampling
+config prob-strategy relative-cubed
+config prob-loss-fn cross
+config max-num-backprops 17500000
+config sampling-strategy square
+config sampling-min 1.0
+config sampling-max 1
+config prob_pow 1
+config max_history_len 1024
+config forwardlr False
+config kath False
+config kath_strategy reweighted

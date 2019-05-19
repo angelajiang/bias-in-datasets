@@ -1,0 +1,8 @@
+usage: train.py [-h] [--dataset {cifar10,cifar100,svhn}]
+                [--model {resnet18,wideresnet}] [--batch_size BATCH_SIZE]
+                [--epochs EPOCHS] [--learning_rate LEARNING_RATE]
+                [--data_augmentation] [--cutout] [--n_holes N_HOLES]
+                [--length LENGTH] [--no-cuda] [--seed SEED]
+                [--output_dir OUTPUT_DIR] [--sampling_min SAMPLING_MIN]
+                [--lr_sched LR_SCHED] [--sb]
+train.py: error: unrecognized arguments: --sb-start-epoch=1
