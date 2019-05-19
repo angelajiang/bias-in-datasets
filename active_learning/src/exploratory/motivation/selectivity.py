@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 
-sns.set_palette("husl")
+sns.set_palette("husl", 10)
 
 BASELINE_COLOR ="#009e73"
 SB_COLOR ="#cc79a7"
@@ -35,7 +35,7 @@ def format_plot(xlabel, ylabel, label_size=11, grid=False):
     plt.gca().xaxis.grid(grid)
     plt.gca().yaxis.grid(grid)
 
-    leg = plt.legend(loc=0, prop={'size': label_size * .8})
+    leg = plt.legend(loc=0, ncol=2, prop={'size': label_size * .8})
     for legobj in leg.legendHandles:
         legobj.set_linewidth(2.0)
 
@@ -88,7 +88,7 @@ def selectivity_lines(filenames, labels, epochs, style, plot_dir):
         for selectivity in range(len(cosine_sim_epoch[epoch])):
             xs.append((selectivity + 1) / 10.)
             ys.append(cosine_sim_epoch[epoch][selectivity])
-        if epoch % 2 == 0:
+        if epoch % 1 == 0:
             plt.plot(xs, ys, marker="o", linestyle=style, label="{}-Epoch {}0".format(label, epoch))
     plt.xlabel("Selectivity")
     plt.ylabel("Cosine Similarity")

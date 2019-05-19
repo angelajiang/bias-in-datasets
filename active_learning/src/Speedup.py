@@ -9,7 +9,8 @@ def get_percent_speedup(nb0, nb1, nf1, alpha):
     Lb = alpha
     latency_original = (Lb * nb0) + (Lf * nb0)
     latency_new = (Lb * nb1) + (Lf * nf1)
-    return (latency_original - latency_new) * 100. / latency_original
+    #return (latency_original - latency_new) * 100. / latency_original
+    return float(latency_original) / latency_new
 
 
 

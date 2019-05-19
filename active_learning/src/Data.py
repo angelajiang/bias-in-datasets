@@ -14,11 +14,11 @@ class ParsedData:
         self.train_lines, self.test_lines = parser.parse_file(filepath)
 
     @property
-    def train_num_backprops(self):
+    def train_num_backwards(self):
         return [l.num_backprop / 1000000. for l in self.train_lines]
 
     @property
-    def test_num_backprops(self):
+    def test_num_backwards(self):
         return [l.num_backprop / 1000000. for l in self.test_lines]
 
     @property
@@ -59,6 +59,22 @@ class ParsedData:
     @property
     def final_accuracy(self):
         return self.test_accuracies[-1]
+
+    def error_at_num_backwards(self, threshold):
+        np_list = np.array(self.test_num_backwards)
+        index = (np_list >= threshold).argmax() if (np_list >= threshold).any() else -1
+        if index >= 0:
+            return self.test_errors[index]
+        else:
+            return None
+
+    def inferences_at_num_backwards(self, threshold):
+        np_list = np.array(self.test_num_backwards)
+        index = (np_list >= threshold).argmax() if (np_list >= threshold).any() else -1
+        if index >= 0:
+            return self.test_num_inferences[index]
+        else:
+            return None
 
     def auc(self, xmax = None):
         if xmax:

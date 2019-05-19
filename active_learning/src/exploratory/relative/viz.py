@@ -100,9 +100,10 @@ def accuracy_v_backprops(filenames, labels):
                     bp = int(vals[2]) / 1000000.
                     acc = float(vals[5])
                     backprops.append(bp)
-                    accuracies.append(acc)
+                    accuracies.append(100 - acc)
         plt.plot(backprops, accuracies, label=label)
-    format_plot("Images Backpropped (millions)", "Accuracy")
+    format_plot("Images Backpropped (millions)", "Error")
+    plt.yscale("log")
     plt.legend()
     plt.show()
 
@@ -144,12 +145,21 @@ if __name__ == "__main__":
     relative1024 = "sampling_cifar10_mobilenetv2_0_128_1024_0.0005_trial1_seed1337_v2"
     relative50000 = "sampling_cifar10_mobilenetv2_0_128_50000_0.0005_trial1_seed1337_v2"
     kath = "kath_cifar10_mobilenetv2_1024_128_0.0_0.0005_trial1_seed1337_v2"
+
     exps = [
             ("150403_baseline", baseline, "No Filter"),
             ("150403_baseline", sb, "Selective-Backprop"),
             ("190503_relative_cross", relative1024, "Relative-SB-1024"),
-            ("190503_relative_cross", relative50000, "Relative-SB-50000"),
-            ("190504_kath", kath, "Katharopoulos18 Sampling"),
+            ("190507_relative-squared_cross", relative1024, "Relative-Squared-SB-1024"),
+            ("190507_relative-cubed_cross", relative1024, "Relative-Cubed-SB-1024"),
+            #("190504_kath", kath, "Katharopoulos18 Sampling"),
+            ]
+
+    exps = [
+            ("190509_icml", baseline, "No Filter"),
+            ("190509_icml", sb, "Selective-Backprop"),
+            ("190509_relative-cubed_cross", relative1024, "Relative-Cubed-SB-1024"),
+            #("190504_kath", kath, "Katharopoulos18 Sampling"),
             ]
 
     filenames = []

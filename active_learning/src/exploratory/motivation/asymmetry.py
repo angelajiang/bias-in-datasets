@@ -68,43 +68,53 @@ def plot(filenames, labels, net, gpu, plot_dir):
                     else:
                         first_update = False
         avg_forwards.append(np.average(forwards))
-        avg_calcs.append(np.average(forwards))
+        avg_calcs.append(np.average(calcs))
         avg_updates.append(np.average(updates))
         std_forwards.append(np.std(forwards))
-        std_calcs.append(np.std(forwards))
+        std_calcs.append(np.std(calcs))
         std_updates.append(np.std(updates))
     width = 0.35
     ind = np.arange(len(avg_forwards))
 
     bottom_sum = [a + b for a, b in zip(avg_forwards, avg_calcs)]
+    bp_sum = [a + b for a, b in zip(avg_updates, avg_calcs)]
+
+    ratios = [float(bp) / f for f, bp in zip(avg_forwards, bp_sum)]
 
     p1 = plt.bar(ind, avg_forwards, width, yerr=std_forwards)
     p2 = plt.bar(ind, avg_calcs, bottom=avg_forwards, width=width, yerr=std_calcs)
     p3 = plt.bar(ind, avg_updates, bottom=bottom_sum, width=width, yerr=std_updates)
+
     plt.xticks(ind, labels)
 
     plt.legend((p1[0], p2[0], p3[0]), ("Forwards", "Backwards-Calculate", "Backwards-Update"))
-    plt.ylabel("Seconds")
-
-    plt.title("{} on {}".format(net, gpu))
+    format_plot("Batch size", "Seconds")
     plot_file = os.path.join(plot_dir, "{}_{}".format(gpu, net))
-    plt.savefig(plot_file + ".png")
-    plt.savefig(plot_file + ".pdf")
+    plt.ylim(0, .4)
+    plt.tight_layout()
+    plt.savefig(plot_file + ".png", bbox_inches = "tight")
+    plt.savefig(plot_file + ".pdf", bbox_inches = "tight")
     plt.clf()
+    return ratios
 
 if __name__ == "__main__":
     homedir = "/Users/angela/src/private/bias-in-datasets/active_learning/data/output/microbenchmarks"
     plot_homedir = "/Users/angela/src/private/bias-in-datasets/active_learning/plots"
+    #nets = ["mobilenetv2"]
     nets = ["resnet", "mobilenetv2"]
-    batch_sizes = [32, 64, 128]
+    nets = ["mobilenetv2"]
+    batch_sizes = [1, 32, 64, 128]
     tuples = [
-            ("190516_asymmetry_titanv", "TitanV"),
-            ("190516_asymmetry_k20", "K20"),
+            ("190517_asymmetry_titanv", "TitanV"),
+            ("190517_asymmetry_GTX1070", "GTX-1070"),
+            ("190517_asymmetry_k20", "K20"),
             ]
+
+    all_ratios = []
     for expname, gpu in tuples:
         filenames = []
         labels = []
-        plot_dir = os.path.join(plot_homedir, expname)
+        plot_dir = os.path.join(plot_homedir, "asymmetry", expname)
         if not os.path.exists(plot_dir):
             os.makedirs(plot_dir)
         for net in nets:
@@ -112,7 +122,25 @@ if __name__ == "__main__":
                 fname = "asymmetry_{}_{}".format(net, batch_size)
                 fpath = os.path.join(homedir, expname, fname)
                 if os.path.exists(fpath):
-                    label = "BS={}".format(batch_size)
+                    label = "{}".format(batch_size)
                     filenames.append(fpath)
                     labels.append(label)
-            plot(filenames, labels, net, gpu, plot_dir)
+            ratios = plot(filenames, labels, net, gpu, plot_dir)
+            print(ratios)
+            all_ratios.append((gpu, net, ratios))
+
+    plot_dir = os.path.join(plot_homedir, "asymmetry", "190517_asymmetry")
+    if not os.path.exists(plot_dir):
+        os.makedirs(plot_dir)
+    for gpu, net, ratios in all_ratios:
+        print ratios
+        plt.plot(ratios, marker="o", label="{} on {}".format(net, gpu))
+    plt.ylim(0, 3)
+    plt.xticks(range(len(ratios)), batch_sizes)
+    format_plot("Batch size", "Backwards / forwards latency")
+    plot_file = os.path.join(plot_dir, "asymmetry")
+    plt.tight_layout()
+    plt.savefig(plot_file + ".png")
+    plt.savefig(plot_file + ".pdf")
+    plt.clf()
+
