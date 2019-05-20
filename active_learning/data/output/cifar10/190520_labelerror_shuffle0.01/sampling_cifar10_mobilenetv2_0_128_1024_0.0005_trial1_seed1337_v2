@@ -1,0 +1,6 @@
+/usr/local/lib/python2.7/dist-packages/torch/nn/_reduction.py:46: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+/users/ahjiang/src/pytorch-cifar/lib/trainer.py:143: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  softmax_outputs = nn.Softmax()(outputs)
+main.py:255: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  softmax_outputs = nn.Softmax()(outputs)
