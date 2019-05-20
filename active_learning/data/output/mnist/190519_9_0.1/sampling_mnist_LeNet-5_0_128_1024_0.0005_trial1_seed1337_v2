@@ -1,0 +1,26 @@
+Setting static random seeds to 1337
+==> Building model..
+60000
+config sb-start-epoch 0.0
+config lr 0.1
+config lr-sched None
+config momentum 0.9
+config decay 0.0005
+config batch-size 128
+config net LeNet-5
+config dataset mnist
+config seed 1337
+config optimizer sgd
+config loss-fn cross
+config sb-strategy sampling
+config prob-strategy relative-seventh
+config prob-loss-fn cross
+config max-num-backprops 1400000
+config sampling-strategy square
+config sampling-min 0.0
+config sampling-max 1
+config prob_pow 1
+config max-history_len 1024
+config forwardlr False
+config kath False
+config kath-strategy reweighted
