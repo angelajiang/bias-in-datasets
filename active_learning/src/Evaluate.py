@@ -109,7 +109,7 @@ def evaluate(experiments_dir, baseline_name, baseline_file, experiment_name, max
 
 def evaluate_file(filename, target_errors=None, target_backwards=None):
     exp_data = ParsedData(filename)
-    final_error = 100 - exp_data.final_accuracy
+    final_error = 100 - exp_data.best_accuracy
     final_num_backwards = find_first_x_at_y_err(exp_data.test_num_backwards,
                                           exp_data.test_errors,
                                           final_error)
