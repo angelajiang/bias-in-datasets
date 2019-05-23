@@ -60,6 +60,10 @@ class ParsedData:
     def final_accuracy(self):
         return self.test_accuracies[-1]
 
+    @property
+    def best_accuracy(self):
+        return max(self.test_accuracies)
+
     def error_at_num_backwards(self, threshold):
         np_list = np.array(self.test_num_backwards)
         index = (np_list >= threshold).argmax() if (np_list >= threshold).any() else -1
