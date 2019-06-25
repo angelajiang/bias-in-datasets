@@ -1,0 +1,4 @@
+190617_probs_noaug_nosample average MSE: 0.0200937375858
+190617_probs_aug_nosample average MSE: 0.0318925135278
+190617_probs_noaug_sample average MSE: 0.0430936900454
+190617_probs_aug_sample average MSE: 0.0423131731921
