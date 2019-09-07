@@ -1,0 +1,135 @@
+Namespace(batch_size=128, calculator='relative', cuda=True, cutout=True, data_augmentation=False, dataset='svhn', forwardlr=True, fp_selector='alwayson', hours=96.0, kath_oversampling_rate=5.0, learning_rate=0.1, length=20, lr_sched='/users/ahjiang/src/Cutout/pytorch-cifar/data/config/sysml20//svhn/lr_sched_svhn_wideresnet', model='wideresnet', n_holes=1, no_cuda=False, output_dir='./logs', prob_pow=4.0, sb=True, seed=0, staleness=2, strategy='kath')
+Using downloaded and verified file: data/train_32x32.mat
+Using downloaded and verified file: data/extra_32x32.mat
+Using downloaded and verified file: data/test_32x32.mat
+Condition not satisified
+Setting learning rate to 0.1 at 128 backprops
+test_debug,0,604288,0,0.001746,93.546404,0,3178.61508298
+Condition not satisified
+test_debug,1,1208676,0,0.001664,94.137984,0,6070.66009498
+Condition not satisified
+test_debug,2,1813064,0,0.001786,93.657806,0,8954.72002196
+Condition not satisified
+test_debug,3,2417452,0,0.001823,93.227566,0,11841.814198
+Condition not satisified
+test_debug,4,3021840,0,0.001838,93.527197,0,14729.0140209
+Condition not satisified
+test_debug,5,3626228,0,0.001589,94.356945,0,17614.371896
+Condition not satisified
+test_debug,6,4230616,0,0.001578,94.387677,0,20499.3795319
+Condition not satisified
+test_debug,7,4835004,0,0.001548,94.564382,0,23388.0231481
+Condition not satisified
+test_debug,8,5439392,0,0.001619,94.307007,0,26272.032829
+Condition not satisified
+test_debug,9,6043780,0,0.001750,93.515673,0,29158.721627
+Condition not satisified
+test_debug,10,6648168,0,0.001487,94.837124,0,32041.6837249
+Condition not satisified
+test_debug,11,7252556,0,0.001545,94.840965,0,34928.289263
+Condition not satisified
+test_debug,12,7856944,0,0.001705,93.895974,0,37817.626121
+Condition not satisified
+test_debug,13,8461332,0,0.001556,94.429932,0,40702.832557
+Condition not satisified
+test_debug,14,9065720,0,0.001591,94.491395,0,43584.7488739
+Condition not satisified
+test_debug,15,9670108,0,0.001639,94.141825,0,46464.6534331
+Condition not satisified
+test_debug,16,10274496,0,0.001539,94.645052,0,49342.9609699
+Condition not satisified
+test_debug,17,10878884,0,0.001495,94.783344,0,52229.424144
+Condition not satisified
+test_debug,18,11483272,0,0.002123,92.482329,0,55109.9023349
+Condition not satisified
+test_debug,19,12087660,0,0.001524,94.748771,0,57990.007829
+Condition not satisified
+test_debug,20,12692048,0,0.001776,93.673171,0,60877.07599
+Condition not satisified
+test_debug,21,13296436,0,0.001586,94.441457,0,63761.933224
+Condition not satisified
+test_debug,22,13900824,0,0.001707,93.988168,0,66641.0055768
+Condition not satisified
+test_debug,23,14505212,0,0.001551,94.648894,0,69520.7405279
+Condition not satisified
+test_debug,24,15109600,0,0.001483,94.937001,0,72401.9075389
+Condition not satisified
+test_debug,25,15713988,0,0.001693,94.068838,0,75294.2638121
+Condition not satisified
+test_debug,26,16318376,0,0.001613,94.326214,0,78175.7977719
+Condition not satisified
+test_debug,27,16922764,0,0.001591,94.422250,0,81056.660089
+Condition not satisified
+test_debug,28,17527152,0,0.001723,93.965120,0,83942.846467
+Condition not satisified
+test_debug,29,18131540,0,0.001438,95.048402,0,86822.4151421
+Condition not satisified
+test_debug,30,18735928,0,0.002043,92.397818,0,89707.1747749
+Condition not satisified
+test_debug,31,19340316,0,0.001974,92.908728,0,92588.0160959
+Condition not satisified
+test_debug,32,19944704,0,0.001517,94.610479,0,95466.5165579
+Condition not satisified
+test_debug,33,20549092,0,0.001443,94.921635,0,98347.675328
+Condition not satisified
+test_debug,34,21153480,0,0.001542,94.426091,0,101228.398446
+Condition not satisified
+test_debug,35,21757868,0,0.001946,93.070068,0,104114.361178
+Condition not satisified
+test_debug,36,22362256,0,0.001669,94.099570,0,106993.965624
+Condition not satisified
+test_debug,37,22966644,0,0.001524,94.645052,0,109875.226018
+Condition not satisified
+test_debug,38,23571032,0,0.001441,95.075292,0,112757.034314
+Condition not satisified
+test_debug,39,24175420,0,0.001455,94.998463,0,115648.239869
+Condition not satisified
+test_debug,40,24779808,0,0.001400,95.340350,0,118530.74742
+Condition not satisified
+test_debug,41,25384196,0,0.001567,94.364628,0,121409.566884
+Condition not satisified
+test_debug,42,25988584,0,0.001636,94.249385,0,124291.169315
+Condition not satisified
+test_debug,43,26592972,0,0.001472,94.875538,0,127174.358704
+Condition not satisified
+test_debug,44,27197360,0,0.001454,95.221266,0,130054.698825
+Condition not satisified
+test_debug,45,27801748,0,0.001846,93.319760,0,132937.125372
+Condition not satisified
+test_debug,46,28406136,0,0.001756,93.903657,0,135819.782995
+Condition not satisified
+test_debug,47,29010524,0,0.001525,94.771819,0,138699.538791
+Condition not satisified
+test_debug,48,29614912,0,0.001666,93.995851,0,141578.906408
+Condition not satisified
+test_debug,49,30219300,0,0.001866,93.258297,0,144458.091665
+Condition not satisified
+test_debug,50,30823688,0,0.001766,93.757683,0,147342.962317
+Condition not satisified
+test_debug,51,31428076,0,0.001832,93.504149,0,150225.840829
+Condition not satisified
+test_debug,52,32032464,0,0.001696,93.968961,0,153107.046676
+Condition not satisified
+test_debug,53,32636852,0,0.001688,94.038107,0,155986.210475
+Condition not satisified
+test_debug,54,33241240,0,0.001490,94.875538,0,158865.328024
+Condition not satisified
+test_debug,55,33845628,0,0.001612,94.341580,0,161748.870286
+Condition not satisified
+test_debug,56,34450016,0,0.001406,95.317302,0,164627.195739
+Condition not satisified
+test_debug,57,35054404,0,0.002027,92.505378,0,167507.712079
+Condition not satisified
+test_debug,58,35658792,0,0.001648,94.041948,0,170387.654418
+Condition not satisified
+test_debug,59,36263180,0,0.001712,93.788414,0,173266.760004
+Condition not satisified
+Setting learning rate to 0.01 at 36263408 backprops
+test_debug,60,36867568,0,0.000955,96.992163,0,176146.414999
+Condition satisified
+test_debug,61,36944367,527461,0.001005,97.199600,0,177304.260312
+Condition not satisified
+test_debug,62,37548883,527461,0.000930,97.199600,0,180191.128387
+Condition satisified
+test_debug,63,37626152,1054452,0.001063,97.042102,0,181244.711834
+Condition not satisified

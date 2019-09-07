@@ -1,0 +1,19 @@
+Namespace(batch_size=128, calculator='relative', cuda=True, cutout=True, data_augmentation=False, dataset='svhn', epochs=160, forwardlr=True, fp_selector='stale', learning_rate=0.1, length=20, lr_sched='/users/ahjiang/src/Cutout/pytorch-cifar/data/config/sysml20//svhn/lr_sched_svhn_wideresnet', model='wideresnet', n_holes=1, no_cuda=False, output_dir='./logs', prob_pow=1, sb=True, seed=0, strategy='sb')
+Using downloaded and verified file: data/train_32x32.mat
+Using downloaded and verified file: data/extra_32x32.mat
+Using downloaded and verified file: data/test_32x32.mat
+StaleSelector_2
+Setting learning rate to 0.1 at 128 backprops
+test_debug,0,604388,0,0.001941,92.720498,0,3169.10860705
+{'forward': 0, 'counter': 0, 'no_forward': 0}
+{'forward': 0, 'counter': 50000, 'no_forward': 50000}
+{'forward': 0, 'counter': 100000, 'no_forward': 100000}
+{'forward': 0, 'counter': 150000, 'no_forward': 150000}
+{'forward': 0, 'counter': 200000, 'no_forward': 200000}
+{'forward': 0, 'counter': 250000, 'no_forward': 250000}
+{'forward': 0, 'counter': 300000, 'no_forward': 300000}
+{'forward': 0, 'counter': 350000, 'no_forward': 350000}
+{'forward': 0, 'counter': 400000, 'no_forward': 400000}
+{'forward': 0, 'counter': 450000, 'no_forward': 450000}
+{'forward': 0, 'counter': 500000, 'no_forward': 500000}
+{'forward': 0, 'counter': 550000, 'no_forward': 550000}

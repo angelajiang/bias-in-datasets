@@ -1,0 +1,49 @@
+Namespace(batch_size=128, calculator='relative', cuda=True, cutout=True, data_augmentation=True, dataset='cifar100', epochs=200, forwardlr=True, fp_selector='alwayson', kath_oversampling_rate=4, learning_rate=0.1, length=8, lr_sched='/users/ahjiang/src/Cutout/pytorch-cifar/data/config/sysml20//cifar100/lr_sched_cifar100_wideresnet', model='wideresnet', n_holes=1, no_cuda=False, output_dir='./logs', prob_pow=3, sb=True, seed=0, strategy='kath')
+Files already downloaded and verified
+Files already downloaded and verified
+Condition not satisified
+Setting learning rate to 0.1 at 128 backprops
+test_debug,0,49920,0,0.030653,11.500000,0,297.64981389
+Condition not satisified
+test_debug,1,99920,0,0.027682,18.410000,0,584.663756847
+Condition not satisified
+test_debug,2,149920,0,0.023447,27.980000,0,868.550633907
+Condition not satisified
+test_debug,3,199920,0,0.019827,36.340000,0,1152.24884486
+Condition not satisified
+test_debug,4,249920,0,0.018461,39.760000,0,1435.94534087
+Condition not satisified
+test_debug,5,299920,0,0.016093,45.260000,0,1719.67177486
+Condition not satisified
+test_debug,6,349920,0,0.015628,47.680000,0,2003.22399282
+Condition not satisified
+test_debug,7,399920,0,0.014484,50.530000,0,2286.75411391
+Condition not satisified
+test_debug,8,449920,0,0.013679,52.620000,0,2570.11148381
+Condition not satisified
+test_debug,9,499920,0,0.014608,50.960000,0,2853.40605092
+Condition not satisified
+test_debug,10,549920,0,0.013013,55.250000,0,3136.69909096
+Condition not satisified
+test_debug,11,599920,0,0.012313,56.930000,0,3419.92646194
+Condition not satisified
+test_debug,12,649920,0,0.013978,53.080000,0,3703.16266298
+Condition not satisified
+test_debug,13,699920,0,0.012727,56.480000,0,3986.36268783
+Condition not satisified
+test_debug,14,749920,0,0.012924,56.110000,0,4269.6078589
+Condition not satisified
+test_debug,15,799920,0,0.012485,56.800000,0,4552.76618695
+Condition not satisified
+test_debug,16,849920,0,0.011606,59.330000,0,4835.96291494
+Condition not satisified
+test_debug,17,899920,0,0.013866,54.250000,0,5119.13520002
+Condition not satisified
+test_debug,18,949920,0,0.010727,61.650000,0,5402.36926889
+Condition not satisified
+test_debug,19,999920,0,0.011424,60.690000,0,5685.57638383
+Condition not satisified
+test_debug,20,1049920,0,0.011922,59.390000,0,5968.80864286
+Condition not satisified
+test_debug,21,1099920,0,0.011923,59.340000,0,6251.95274901
+Condition not satisified

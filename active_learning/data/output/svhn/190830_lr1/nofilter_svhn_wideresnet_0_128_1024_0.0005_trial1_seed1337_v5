@@ -1,0 +1,29 @@
+Namespace(batch_size=128, calculator='relative', cuda=True, cutout=True, data_augmentation=False, dataset='svhn', epochs=160, forwardlr=True, fp_selector='alwayson', learning_rate=0.1, length=20, lr_sched='/users/ahjiang/src/Cutout/pytorch-cifar/data/config/sysml20//svhn/lr_sched_svhn_wideresnet', model='wideresnet', n_holes=1, no_cuda=False, output_dir='./logs', sampling_min=0, sb=True, seed=0, strategy='nofilter')
+Using downloaded and verified file: data/train_32x32.mat
+Using downloaded and verified file: data/extra_32x32.mat
+Using downloaded and verified file: data/test_32x32.mat
+Setting learning rate to 0.1 at 128 backprops
+test_debug,0,604388,0,0.001553,94.645052,0,2501.60786104
+test_debug,1,1208776,0,0.001551,94.556699,0,4713.89217997
+test_debug,2,1813164,0,0.001408,95.217425,0,6921.90316391
+test_debug,3,2417552,0,0.001966,92.739705,0,9127.97986984
+test_debug,4,3021940,0,0.001486,95.006146,0,11335.377459
+test_debug,5,3626328,0,0.001525,94.683467,0,13544.1139638
+test_debug,6,4230716,0,0.001634,94.164874,0,15750.2169321
+test_debug,7,4835104,0,0.001805,93.542563,0,17957.083936
+test_debug,8,5439492,0,0.001594,94.437615,0,20160.89498
+test_debug,9,6043880,0,0.001654,94.034266,0,22367.5565488
+test_debug,10,6648268,0,0.001426,95.175169,0,24570.1552279
+test_debug,11,7252656,0,0.001657,94.007376,0,26781.78462
+test_debug,12,7857044,0,0.001601,94.322372,0,28988.171663
+test_debug,13,8461432,0,0.002034,92.539951,0,31193.09201
+test_debug,14,9065820,0,0.001600,94.280117,0,33395.545157
+test_debug,15,9670208,0,0.001346,95.501690,0,35600.332531
+test_debug,16,10274596,0,0.001586,94.395360,0,37803.0945349
+test_debug,17,10878984,0,0.001640,94.210971,0,40006.1235719
+test_debug,18,11483372,0,0.001910,93.227566,0,42209.055284
+test_debug,19,12087760,0,0.001935,92.924093,0,44412.1360738
+test_debug,20,12692148,0,0.001687,94.184081,0,46614.2761059
+test_debug,21,13296536,0,0.001638,94.291641,0,48817.631989
+test_debug,22,13900924,0,0.001560,94.506761,0,51025.749944
+test_debug,23,14505312,0,0.001835,93.204518,0,53232.3574009
