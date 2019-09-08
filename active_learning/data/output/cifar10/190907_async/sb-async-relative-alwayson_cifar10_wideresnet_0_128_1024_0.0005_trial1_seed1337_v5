@@ -1,0 +1,2258 @@
+Namespace(batch_size=128, calculator='relative', cuda=True, cutout=True, data_augmentation=True, dataset='cifar10', epochs=4, forwardlr=True, fp_selector='alwayson', learning_rate=0.1, length=16, lr_sched='/home/ahjiang/Cutout/pytorch-cifar/data/config/sysml20//cifar10/lr_sched_cifar10_wideresnet', model='wideresnet', n_holes=1, no_cuda=False, output_dir='./logs', sampling_min=0, sb=True, seed=0, strategy='sb-async')
+Files already downloaded and verified
+Files already downloaded and verified
+[train] Started train for new epoch
+[train] finished copy
+[train] finished network move
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[train] starting a backprop
+Setting learning rate to 0.1 at 129 backprops
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] Started train for new epoch
+[train] finished copy
+[train] finished network move
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] Started train for new epoch
+[train] finished copy
+[train] finished network move
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] Started train for new epoch
+[train] finished copy
+[train] finished network move
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[mark_batch] doing a forward pass
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop
+[train] starting a backprop

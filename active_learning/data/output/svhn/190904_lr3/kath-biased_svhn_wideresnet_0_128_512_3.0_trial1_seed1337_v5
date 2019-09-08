@@ -1,0 +1,14 @@
+Namespace(batch_size=128, calculator='relative', cuda=True, cutout=True, data_augmentation=False, dataset='svhn', forwardlr=True, fp_selector='alwayson', hours=76.0, kath_oversampling_rate=4.0, learning_rate=0.1, length=20, lr_sched='/users/ahjiang/src/Cutout/pytorch-cifar/data/config/sysml20//svhn/lr_sched_svhn_wideresnet_0.8x', model='wideresnet', n_holes=1, no_cuda=False, output_dir='./logs', prob_pow=3.0, sb=True, seed=0, staleness=2, strategy='kath')
+Using downloaded and verified file: data/train_32x32.mat
+Using downloaded and verified file: data/extra_32x32.mat
+Using downloaded and verified file: data/test_32x32.mat
+Condition not satisified
+Setting learning rate to 0.1 at 128 backprops
+test_debug,0,604288,0,0.001745,93.700061,0,3192.02346587
+Condition satisified
+test_debug,1,705093,503455,0.001435,95.255839,0,4444.10260606
+Condition not satisified
+test_debug,2,1309609,503455,0.001525,94.675784,0,7356.00960588
+Condition satisified
+test_debug,3,1408935,1008389,0.001570,95.113706,0,8507.88338494
+Condition not satisified
